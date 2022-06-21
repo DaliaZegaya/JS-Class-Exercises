@@ -1,67 +1,67 @@
-// //תרגיל 1
-// class Student {
-//     sname;
-//     mclass;
-//     mid;
-//     constructor (sname, mclass, mid) {
-//         this.sname = sname;
-//         this.mclass = mclass;
-//         this.mid = mid
-//     }
-// }
-// //תרגיל 2
-// let dalia= new Student ("dalia", "non", "55545")
-// let batel= new Student ("batel", "kok", "55555")
-// console.log(dalia);
-// console.log(batel);
+//תרגיל 1
+class Student {
+    sname;
+    mclass;
+    mid;
+    constructor (sname, mclass, mid) {
+        this.sname = sname;
+        this.mclass = mclass;
+        this.mid = mid
+    }
+}
+//תרגיל 2
+let dalia= new Student ("dalia", "non", "55545")
+let batel= new Student ("batel", "kok", "55555")
+console.log(dalia);
+console.log(batel);
 
-// //תרגיל 3
-// class User {
-//     firstName;
-//     lastName;
-//     age;
-//     email; 
-//     constructor (firstName, lastName, age, email) {
-//         this.firstName= firstName;
-//         this.lastName= lastName;
-//         this.age= age;
-//         this.email= email;
-//     }
-// }
-// //תרגיל 4
-// let or= new User ("Or", "Gadamo",23, "orchok@gmail.com")
-// let daniel= new User ("yonatan", "hh",25, "daniel@gmail.com")
-// let yonatan= new User ("daniel", "ll",24, "yonatan@gmail.com")
-// console.log(or);
-// console.log(daniel);
-// console.log(yonatan);
+//תרגיל 3
+class User {
+    firstName;
+    lastName;
+    age;
+    email; 
+    constructor (firstName, lastName, age, email) {
+        this.firstName= firstName;
+        this.lastName= lastName;
+        this.age= age;
+        this.email= email;
+    }
+}
+//תרגיל 4
+let or= new User ("Or", "Gadamo",23, "orchok@gmail.com")
+let daniel= new User ("yonatan", "hh",25, "daniel@gmail.com")
+let yonatan= new User ("daniel", "ll",24, "yonatan@gmail.com")
+console.log(or);
+console.log(daniel);
+console.log(yonatan);
 
-// //תרגיל 5+6
-// function myFunc () {
-//     let userData= new User (Fname.value, Lname.value, age.value, email.value)
-//     console.log(userData);
-//     myTable.innerHTML= `<tr><td> ${userData.firstName} ${userData.lastName} </tr> </td>`
-// }
+//תרגיל 5+6
+function myFunc () {
+    let userData= new User (Fname.value, Lname.value, age.value, email.value)
+    console.log(userData);
+    myTable.innerHTML= `<tr><td> ${userData.firstName} ${userData.lastName} </tr> </td>`
+}
 
-// //תרגיל 7
-// class Dog {
-//     name;
-//     type;
-//     age;
-//     constructor (name, type, age) {
-//         this.name= name;
-//         this.type= type;
-//         this.age= age;
-//     }
-// }
-// //תרגיל 8
-// let firstDog= new Dog ("loka", "o", 3)
-// let secDog= new Dog ("lopi", "p", 2)
-// let threeDog= new Dog ("poly", "x", 2)
-// let fourDog= new Dog ("jojo", "p", 2)
-// let fiveDog= new Dog ("loco", "p", 2)
-// let dogsArray= [firstDog, secDog, threeDog, fourDog, fiveDog]
-// console.log(dogsArray);
+//תרגיל 7
+class Dog {
+    name;
+    type;
+    age;
+    constructor (name, type, age) {
+        this.name= name;
+        this.type= type;
+        this.age= age;
+    }
+}
+//תרגיל 8
+let firstDog= new Dog ("loka", "o", 3)
+let secDog= new Dog ("lopi", "p", 2)
+let threeDog= new Dog ("poly", "x", 2)
+let fourDog= new Dog ("jojo", "p", 2)
+let fiveDog= new Dog ("loco", "p", 2)
+let dogsArray= [firstDog, secDog, threeDog, fourDog, fiveDog]
+console.log(dogsArray);
 
 //תרגיל 9
 class Teacher {
@@ -85,6 +85,24 @@ function techFunc () {
 
 }
 
+//תרגיל 11
+class Course {
+    constructor (name, isTeacher, grades, students) {
+        this.name= name;
+        this.isTeacher= isTeacher;
+        this.grades= grades;
+        this.students= students;
+    }
+}
+//תרגיל 12
+const course= new Course ("Full Stack", true, [100,80,65,78], ["lior", "or", "daniel", "batel"])
+my_p.innerHTML= `${course.name} ${course.isTeacher} ${course.grades} ${course.students}`
+
+console.log(course.students.sort()); 
+course.grades.sort((a,b)=>b-a).forEach(item => {
+    console.log(item);
+    
+});
 
 
 
